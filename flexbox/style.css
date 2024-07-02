@@ -1,0 +1,84 @@
+.container{
+  background: #e7e7e7;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+}
+
+.item{
+  margin-bottom: 20px;
+  background: #F88146;
+  width: 25px;
+  height: 25px;
+  color:white;
+}
+
+/* #item1{
+  padding-top:10px;
+} */
+
+/**Obs -> Alguns itens irá funcionar se o container possuir espaço para isso**/
+
+/**Direção do flex - Aplicado no container**/
+
+/**Flex Row**/
+.flex{
+  display:flex;
+  gap: 10px;
+}
+
+/**Flex Row - Reverse**/
+.flex-reverse{
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+/**Flex Column**/
+.flex-column{
+  display:flex;
+  flex-direction: column;
+}
+
+/**Flex Column - Reverse**/
+.flex-column-reverse{
+  display:flex;
+  flex-direction: column-reverse;
+  
+}
+
+/**Quebra de linha - WRAP - NOWRAP- Aplicado no container**/
+.wrap{
+  flex-wrap: wrap;
+}
+
+/**Flex Flow - Atalho para Direção e Quebra de linha**/
+.flex-flow{
+ flex-flow: row wrap;
+}
+
+/**Alinhamentos**/
+
+/**justify-content - alinha os item no eixo Y - horizontal / esquerda - direita - centro**/
+/**propriedades: center / flex-start / flex-start / space-between / space-around **/
+
+.flex-justify-content{
+  justify-content: center;
+}
+
+/**align-items - alinha conforme o eixo do container - pra cima - baixo - center **/
+/**propriedades: strech -> cresçam igualmente / center /flex-start / flex-start / baseline -> se baseia na fonte da primeira letra **/
+.flex-align-items{
+ align-items: center;
+}
+
+/**align-content -
+ 
+ 1 - Funciona somente se possuir mais de uma linha com itens
+ 2 - O flex-wrap precisa ser wrap
+ 3 - O container precisa ter espaço sobrando em altura para que as alterações sejam visualizaveis
+
+**/
+/**propriedades: strech /center / flex-start / flex-start / space-between / space-around **/
+.flex-align-content{
+  align-content: start;
+}

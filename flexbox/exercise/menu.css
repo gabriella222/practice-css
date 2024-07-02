@@ -1,0 +1,42 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu{
+   margin-top: 100px;
+   background: #E5E5E5;
+   height: 50px;
+   justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.section{
+  margin: 0 auto;
+  background: #6CD4DE;
+  margin-top: 20px;
+  padding: 20px;
+  max-width:500px;
+  height:300px;
+  justify-content: center;
+}
+.div{
+  background: #99E5ED;
+  padding: 10px;
+  max-width:100px;
+  color: #fff;
+  text-align: center;
+}
+
+nav{
+  padding: 5px;
+}
+
+a{
+  color: #000;
+  text-decoration:none;
+}
