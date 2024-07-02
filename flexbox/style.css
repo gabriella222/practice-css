@@ -8,8 +8,8 @@
 .item{
   margin-bottom: 20px;
   background: #F88146;
-  width: 25px;
-  height: 25px;
+  /* width: 25px;
+  height: 25px; */
   color:white;
 }
 
@@ -62,13 +62,13 @@
 /**propriedades: center / flex-start / flex-start / space-between / space-around **/
 
 .flex-justify-content{
-  justify-content: center;
+  justify-content: start;
 }
 
 /**align-items - alinha conforme o eixo do container - pra cima - baixo - center **/
 /**propriedades: strech -> cresçam igualmente / center /flex-start / flex-start / baseline -> se baseia na fonte da primeira letra **/
 .flex-align-items{
- align-items: center;
+ align-items: start;
 }
 
 /**align-content -
@@ -80,5 +80,52 @@
 **/
 /**propriedades: strech /center / flex-start / flex-start / space-between / space-around **/
 .flex-align-content{
-  align-content: start;
+  align-content: center;
+}
+
+
+/**FlexItems - Aplicado aos items filhos**/
+
+/**flexgrow - faz com que os items cresçam proporcionamente, ou também ao definir itens com difrentes flex-grow ele crescera duas vezes o tamanho original
+ 1 - Flexgrow respeita o tamanho do texto
+ 2- Caso aplicado em todos os items filhos, todos terão o mesmo tamanho, caso seja o mesmo texto
+
+**/
+
+.item-6{
+  flex-grow: 1;
+}
+
+.item-10{
+  flex-grow:2;
+}
+
+/**
+flexbasis - 
+ determina um tamanho X, para que o elemento cresça
+**/
+.flex-basis{
+  flex-basis:0;
+}
+
+/**
+order - ordenação dos elementos filhos
+**/
+.order{
+  order: -1;
+}
+.order-3{
+  order: 3;
+}
+
+/**
+ align-self - alinha o próprio item, não afetando os demais
+**/
+
+.align-self-end{
+  align-self: end;
+}
+
+.align-self-center{
+  align-self: center;
 }
